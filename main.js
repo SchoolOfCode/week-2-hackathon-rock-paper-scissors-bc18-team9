@@ -1,1 +1,2 @@
 let userInput = "";
+let computerInput = "";
