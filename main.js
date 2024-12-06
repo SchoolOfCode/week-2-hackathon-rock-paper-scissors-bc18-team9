@@ -45,13 +45,11 @@ else if (userInput === computerInput){
 else { 
     alert(`It's called rock, paper, scissors, not ${userInput}, paper, scissors`)
 }
-
 alert (`Your score is ${userScore} and the computer's score is ${computerScore}`)
+
+playAgain = confirm("Do you want to play again?")
+console.log(playAgain)
 
 }
 
 
-// create a variable to check game state true/false
-// add a while loop 
-// continue while true
-// escape if false
