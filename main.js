@@ -33,4 +33,4 @@ else {
     alert(`It's called rock, paper, scissors, not ${userInput}, paper, scissors`)
 }
 
-
+alert (`Your score is ${userInput} and the computer's score is ${computerInput}`)
