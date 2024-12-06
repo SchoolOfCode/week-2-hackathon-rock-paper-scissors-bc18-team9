@@ -52,4 +52,6 @@ console.log(playAgain)
 
 }
 
+alert(`Thank you for playing! Your final score is ${userScore} and the computer's final score ${computerScore}`)
+
 
