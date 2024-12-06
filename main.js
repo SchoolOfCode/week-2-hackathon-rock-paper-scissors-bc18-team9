@@ -1,13 +1,22 @@
 let userScore = 0;
 let computerScore = 0;
 let playAgain = true;
-
 let gamesLost = 0;
 let gamesWon = 0;
 let gamesTied= 0;
 let gamesPlayed = 0;
 
 alert("Welcome to our Rock, Paper, Scissors Game!");
+let userName = prompt('What is your name? (10 characters or less)');
+if (userName.length > 10) {
+    alert('This is too long, names must be 10 characters or less')
+    userName = prompt('What is your name? (10 characters or less)')
+    if (userName.length <=10) {
+        alert(`Hello ${userName}`)
+    }
+} 
+
+
 
 while (playAgain === true) {
 let userInput = prompt("Which would you like to choose? Rock, paper or scissors?");
@@ -69,5 +78,5 @@ playAgain = confirm("Do you want to play again?")
 
 
 
-alert(`Thank you for playing! Your final score is ${userScore} and the computer's final score ${computerScore}`)
+alert(`Thank you for playing ${userName}! Your final score is ${userScore} and the computer's final score ${computerScore}`)
 alert(`You played ${gamesPlayed} games, you lost ${gamesLost} games, you won ${gamesWon} games and you tied ${gamesTied} games`)
