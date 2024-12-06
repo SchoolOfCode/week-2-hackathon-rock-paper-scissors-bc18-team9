@@ -10,21 +10,33 @@ let computerScore = 0;
 
 if (userInput === "rock" && computerInput === "paper"){
     alert("You lose!");
+    computerScore++;
+    userScore--;
 }
 else if (userInput === "rock" && computerInput === "scissors"){
     alert("You win!")
+    computerScore--;
+    userScore++;
 }
 else if (userInput === "paper" && computerInput === "rock"){
     alert("You win!")
+    computerScore--;
+    userScore++;
 }
 else if (userInput === "paper" && computerInput === "scissors"){
     alert("You lose!")
+    computerScore++;
+    userScore--;
 }
 else if (userInput === "scissors" && computerInput === "rock"){
     alert("You lose!")
+    computerScore++;
+    userScore--;
 }   
 else if (userInput === "scissors" && computerInput === "paper"){
     alert("You win!")
+    computerScore--;
+    userScore++;
 }  
 else if (userInput === computerInput){
     alert("It's a tie!")
@@ -33,4 +45,4 @@ else {
     alert(`It's called rock, paper, scissors, not ${userInput}, paper, scissors`)
 }
 
-alert (`Your score is ${userInput} and the computer's score is ${computerInput}`)
+alert (`Your score is ${userScore} and the computer's score is ${computerScore}`)
