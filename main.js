@@ -1,11 +1,12 @@
-let userInput = prompt("Welcome to the game! Which would you like to choose? Rock, paper or scissors?");
 let userScore = 0;
 let computerScore = 0;
+let playAgain = true;
 
-
-    const gameChoices = ['rock', 'paper', 'scissors']
-    let computerInput = gameChoices[Math.floor(Math.random()*gameChoices.length)]
-    console.log(computerInput)
+while (playAgain === true) {
+let userInput = prompt("Welcome to the game! Which would you like to choose? Rock, paper or scissors?");
+const gameChoices = ['rock', 'paper', 'scissors']
+let computerInput = gameChoices[Math.floor(Math.random()*gameChoices.length)]
+console.log(computerInput)
 
 
 if (userInput === "rock" && computerInput === "paper"){
@@ -46,3 +47,11 @@ else {
 }
 
 alert (`Your score is ${userScore} and the computer's score is ${computerScore}`)
+
+}
+
+
+// create a variable to check game state true/false
+// add a while loop 
+// continue while true
+// escape if false
